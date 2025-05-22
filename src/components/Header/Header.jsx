@@ -1,12 +1,26 @@
 import shopLogo from "../../assets/shop-logo.png";
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
-        <>
+        <header>
             <img src={shopLogo} alt="Shop Logo" className={styles.logo} />
-            <div>This is a header</div>
-        </>
+            <nav>
+                <ul className={styles.navList}>
+                    <li className={styles.navListItem}>
+                        <Link to="" className={styles.navButton}>
+                            Home
+                        </Link>
+                    </li>
+                    <li className={styles.navListItem}>
+                        <Link to="" className={styles.navButton}>
+                            Shop
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 }
 
