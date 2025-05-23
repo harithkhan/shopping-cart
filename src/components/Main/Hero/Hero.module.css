@@ -1,0 +1,7 @@
+.heroContainer {
+    min-width: 500px;
+    height: auto;
+    background-image: url(../../../assets/dog-hero-phone.png);
+    background-size: cover;
+    background-position: center;
+}
