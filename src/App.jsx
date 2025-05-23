@@ -1,11 +1,12 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import { useParams } from "react-router-dom";
+import Main from "./components/Main/Main";
 
 function App() {
     return (
         <>
             <Header />
+            <Main />
         </>
     );
 }

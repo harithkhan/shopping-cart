@@ -9,12 +9,12 @@ function Header() {
             <nav>
                 <ul className={styles.navList}>
                     <li className={styles.navListItem}>
-                        <Link to="" className={styles.navButton}>
+                        <Link to="/" className={styles.navButton}>
                             Home
                         </Link>
                     </li>
                     <li className={styles.navListItem}>
-                        <Link to="" className={styles.navButton}>
+                        <Link to="/shop" className={styles.navButton}>
                             Shop
                         </Link>
                     </li>
