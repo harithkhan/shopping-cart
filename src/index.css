@@ -67,3 +67,18 @@ h6 {
 
 /* CSS Reset Ends */
 /* General Styling */
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 1000px;
+}
+
+@media (min-width: 768px) {
+    body {
+        min-height: 1024px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
