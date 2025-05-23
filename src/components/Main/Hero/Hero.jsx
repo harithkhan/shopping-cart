@@ -3,7 +3,7 @@ function Hero() {
         <>
             <p>This is the hero section</p>
         </>
-    )
+    );
 }
 
 export default Hero;

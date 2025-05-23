@@ -4,15 +4,7 @@ import { useParams } from "react-router-dom";
 
 function Main() {
     const { name } = useParams();
-    return (
-        <>
-            {name === "shop" ? (
-                <Shop />
-            ): (
-                <Hero />
-            )}
-        </>
-    )
+    return <>{name === "shop" ? <Shop /> : <Hero />}</>;
 }
 
 export default Main;
