@@ -1,0 +1,17 @@
+.shopButton {
+    background-color: aquamarine;
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 2rem;
+    position: absolute;
+    right: 17rem;
+    top: 24rem;
+}
+
+.shopButtonLink {
+    text-decoration: none;
+    color: white;
+    font-family: "Fredoka";
+    font-weight: 700;
+    font-size: 3rem;
+}
