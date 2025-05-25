@@ -4,8 +4,8 @@
     border-radius: 100px;
     padding: 0.5rem 2rem;
     position: absolute;
-    right: 17rem;
-    top: 24rem;
+    right: 15rem;
+    top: 15rem;
 }
 
 .shopButtonLink {
@@ -19,11 +19,24 @@
 @media(max-width: 768px) {
     .shopButton {
         border-radius: 40px;
-        right: 5rem;
-        top: 18.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 12rem;
+        width: 15rem;
         padding: 0rem 2rem;
     }
     .shopButtonLink {
         font-size: 2.5rem;
     }
+}
+
+@media(min-width: 430px) and (max-width: 768px) {
+    .shopButton {
+        top: 13rem;
+        width: 15rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
 }
