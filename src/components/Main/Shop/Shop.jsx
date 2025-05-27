@@ -21,7 +21,8 @@ function Shop() {
                         alt={product.title}
                         className={styles.productImage}
                     />
-                    <h3>{product.title}</h3>
+                    <h3 className={styles.productTitle}>{product.title}</h3>
+                    <h4 className={styles.productPrice}>RM{product.price}</h4>
                 </div>
             ))}
         </div>
