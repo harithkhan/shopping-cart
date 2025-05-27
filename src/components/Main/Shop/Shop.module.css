@@ -17,14 +17,16 @@
     justify-self: center;
 }
 
-.productText {
-    justify-self: center;
-}
-
 .productTitle,
 .productPrice {
     justify-self: center;
     text-align: center;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
 }
 
 @media(max-width: 766px) { 

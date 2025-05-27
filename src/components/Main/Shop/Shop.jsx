@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import styles from "./Shop.module.css";
+import { Link } from "react-router-dom";
 
 function Shop() {
     const [products, setProducts] = useState([]);
@@ -15,15 +16,23 @@ function Shop() {
     return (
         <div className={styles.shop}>
             {products.map((product) => (
-                <div key={product.id} className={styles.productCard}>
-                    <img
-                        src={product.image}
-                        alt={product.title}
-                        className={styles.productImage}
-                    />
-                    <h3 className={styles.productTitle}>{product.title}</h3>
-                    <h4 className={styles.productPrice}>RM{product.price}</h4>
-                </div>
+                <Link
+                    to={`/shop/${product.id}`}
+                    className={styles.link}
+                    key={product.id}
+                >
+                    <div className={styles.productCard}>
+                        <img
+                            src={product.image}
+                            alt={product.title}
+                            className={styles.productImage}
+                        />
+                        <h3 className={styles.productTitle}>{product.title}</h3>
+                        <h4 className={styles.productPrice}>
+                            RM{product.price}
+                        </h4>
+                    </div>
+                </Link>
             ))}
         </div>
     );
