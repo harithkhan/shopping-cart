@@ -1,3 +1,16 @@
+.shop {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 5rem;
+}
+
 .productCard {
     width: 20rem;
+    height: 30rem;
+}
+
+.productImage {
+    height: 20rem;
+    width: auto;
 }
