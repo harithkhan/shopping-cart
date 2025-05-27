@@ -16,7 +16,8 @@
     font-size: 3rem;
 }
 
-@media(max-width: 769px) {
+@media(max-width: 766px) { 
+    /* Phone Screens */
     .shopButton {
         border-radius: 40px;
         left: 50%;
@@ -31,6 +32,7 @@
 }
 
 @media(min-width: 430px) and (max-width: 768px) {
+    /* iPhone 14 pro max */
     .shopButton {
         top: 13rem;
         width: 15rem;
@@ -38,16 +40,35 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    /* iPad Pro */
     .shopButton {
         top: 14rem;
-        right: 12rem;
+        right: 10rem;
     }
 }
 
 
 @media(min-width: 769px) and (max-width: 820px) {
+    /* iPad Air */
     .shopButton {
         top: 10rem;
         width: 10rem;
+        border-radius: 40px;
+        width: 15rem;
+    }
+    .shopButtonLink {
+        font-size: 2.5rem;
+    }
+}
+
+@media(min-width: 767px) and (max-width: 819px) { 
+    /* ipadMini */
+    .shopButton {
+        border-radius: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 26rem;
+        width: 20rem;
+        padding: 0rem 2rem;
     }
 }
