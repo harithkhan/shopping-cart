@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./Product.module.css";
 import QuantitySelector from "../QuantitySelector/QuantitySelector";
+import AddToCart from "../AddToCart/AddToCart";
 
 function Product() {
     const { id } = useParams();
@@ -27,7 +28,10 @@ function Product() {
                 <h1>{product.title}</h1>
                 <p>{product.description}</p>
                 <p>RM{product.price}</p>
-                <QuantitySelector />
+                <div className={styles.productControls}>
+                    <QuantitySelector />
+                    <AddToCart />
+                </div>
             </div>
         </div>
     );

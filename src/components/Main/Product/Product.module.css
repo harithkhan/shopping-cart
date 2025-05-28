@@ -8,3 +8,8 @@
     width: 20rem;
     height: auto;
 }
+
+.productControls {
+    display: flex;
+    gap: 2rem;
+}
