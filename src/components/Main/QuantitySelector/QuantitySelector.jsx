@@ -1,8 +1,6 @@
-import { useState } from "react";
 import styles from "./QuantitySelector.module.css";
 
-function QuantitySelector() {
-    const [quantity, setQuantity] = useState(1);
+function QuantitySelector({ quantity, setQuantity }) {
     const increase = () => setQuantity((quantity) => quantity + 1);
     const decrease = () => setQuantity((quantity) => Math.max(1, quantity - 1));
     return (

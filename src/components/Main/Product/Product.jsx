@@ -7,6 +7,7 @@ import AddToCart from "../AddToCart/AddToCart";
 function Product() {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
+    const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/${id}`)
@@ -29,7 +30,10 @@ function Product() {
                 <p>{product.description}</p>
                 <p>RM{product.price}</p>
                 <div className={styles.productControls}>
-                    <QuantitySelector />
+                    <QuantitySelector
+                        quantity={quantity}
+                        setQuantity={setQuantity}
+                    />
                     <AddToCart />
                 </div>
             </div>
