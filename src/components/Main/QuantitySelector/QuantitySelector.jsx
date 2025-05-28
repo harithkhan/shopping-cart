@@ -7,9 +7,13 @@ function QuantitySelector() {
     const decrease = () => setQuantity((quantity) => Math.max(1, quantity - 1));
     return (
         <div className={styles.QuantitySelector}>
-            <button onClick={decrease}>-</button>
+            <button onClick={decrease} className={styles.quantityButton}>
+                -
+            </button>
             <p>{quantity}</p>
-            <button onClick={increase}>+</button>
+            <button onClick={increase} className={styles.quantityButton}>
+                +
+            </button>
         </div>
     );
 }
