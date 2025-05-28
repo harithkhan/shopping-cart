@@ -1,0 +1,10 @@
+.productContainer {
+    display: flex;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+.img {
+    width: 20rem;
+    height: auto;
+}

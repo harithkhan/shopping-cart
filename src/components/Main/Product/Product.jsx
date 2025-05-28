@@ -17,10 +17,16 @@ function Product() {
 
     return (
         <div className={styles.productContainer}>
-            <img src={product.image} alt={product.title} />
-            <h1>{product.title}</h1>
-            <p>{product.description}</p>
-            <p>RM{product.price}</p>
+            <img
+                src={product.image}
+                alt={product.title}
+                className={styles.img}
+            />
+            <div className={styles.productDescriptionAndControls}>
+                <h1>{product.title}</h1>
+                <p>{product.description}</p>
+                <p>RM{product.price}</p>
+            </div>
         </div>
     );
 }
