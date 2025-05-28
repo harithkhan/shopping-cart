@@ -1,0 +1,15 @@
+.QuantitySelector {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 6rem;
+    width: 6rem;
+}
+
+button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
