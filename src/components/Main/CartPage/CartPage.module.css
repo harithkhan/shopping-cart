@@ -1,0 +1,20 @@
+.cartPage {
+    display: flex;
+    gap: 2rem;
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cartItems {
+    display: flex;
+    gap: 2rem;
+}
+
+.productImage {
+    width: 10rem;
+    height: auto;
+}
