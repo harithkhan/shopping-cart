@@ -41,6 +41,9 @@ function CartPage({ cart }) {
                             Delivery Fees: RM10
                         </p>
                         <p className={styles.total}>Total: RM{total}</p>
+                        <button className={styles.checkoutButton}>
+                            Checkout
+                        </button>
                     </div>
                 </>
             )}

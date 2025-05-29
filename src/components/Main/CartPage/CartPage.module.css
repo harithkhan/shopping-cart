@@ -18,3 +18,7 @@
     width: 10rem;
     height: auto;
 }
+
+.checkoutButton {
+    cursor: pointer;
+}
