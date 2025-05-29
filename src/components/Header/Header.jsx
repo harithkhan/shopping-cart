@@ -18,6 +18,11 @@ function Header() {
                             Shop
                         </Link>
                     </li>
+                    <li className={styles.navListItem}>
+                        <Link to="/cart" className={styles.navButton}>
+                            Cart
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>
