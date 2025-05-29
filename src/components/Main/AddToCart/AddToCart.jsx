@@ -1,7 +1,14 @@
 import styles from "./AddToCart.module.css";
 
-function AddToCart() {
-    return <button className={styles.cartButton}>Add To Cart</button>;
+function AddToCart({ addToCart, product, quantity }) {
+    const handleClick = () => {
+        addToCart(product, quantity);
+    };
+    return (
+        <button className={styles.cartButton} onClick={handleClick}>
+            Add To Cart
+        </button>
+    );
 }
 
 export default AddToCart;

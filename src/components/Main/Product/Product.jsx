@@ -4,7 +4,7 @@ import styles from "./Product.module.css";
 import QuantitySelector from "../QuantitySelector/QuantitySelector";
 import AddToCart from "../AddToCart/AddToCart";
 
-function Product() {
+function Product({ addToCart }) {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
     const [quantity, setQuantity] = useState(1);
@@ -34,7 +34,11 @@ function Product() {
                         quantity={quantity}
                         setQuantity={setQuantity}
                     />
-                    <AddToCart />
+                    <AddToCart
+                        product={product}
+                        quantity={quantity}
+                        addToCart={addToCart}
+                    />
                 </div>
             </div>
         </div>
